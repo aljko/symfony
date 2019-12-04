@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>
+    {% if slug == " " %}
+        Aucune série sélectionnée, veuillez choisir une série
+    {% else %}
+        {{ slug }}
+    {% endif %}
+    </h1>
+{% endblock %}
