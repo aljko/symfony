@@ -1,11 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}All programs{% endblock %}
+{% block title %}All programs from {{ category.name }}{% endblock %}
 
 {% block body %}
-    <h1>Toutes les séries de la table program : </h1>
+    <h1>Les 3 premières séries de la catégorie {{ category.name }} de la table program : </h1>
     {% for program in programs %}
         <div>
+            <img style="float:left; margin-right: 10px; width: 100px" src="{{ program.poster }}">
             <h2>{{ loop.index }} / {{ program.title }} - Catégorie : {{ program.category.name }}</h2>
             <p>{{ program.summary }}</p>
         </div>

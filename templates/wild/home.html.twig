@@ -1,3 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}<H1>Bienvenue!</H1>{% endblock %}
+{% block body %}<H1>Bienvenue!</H1>
+
+<a href="{{ path('wild_show', { 'slug': "walking-dead" }) }}">
+    Test la methode show() de WildController avec une série $slug.
+</a>
+<br>
+<a href="{{ path('wild_index') }}">
+    Test la methode index() method de WildController pour voir toutes les séries.
+</a>
+<br>
+    <a href="{{ path('show_category', { 'categoryName': "horreur" }) }}">
+        Test la methode showByCategory() de WildController pour voir toutes les séries de la catégorie Horreur $categoryName.
+    </a>
+    <br>
+{% endblock %}
+
+gi
