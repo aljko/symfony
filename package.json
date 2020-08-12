@@ -19,6 +19,6 @@
         "build": "encore production --progress"
     },
     "dependencies": {
-        "serialize-javascript": "^2.1.1"
+        "serialize-javascript": "^3.1.0"
     }
 }
